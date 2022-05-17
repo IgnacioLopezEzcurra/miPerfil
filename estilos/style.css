@@ -23,6 +23,10 @@ nav{
     align-items: center;
 }
 
+ul{
+    list-style: none;
+}
+
 nav ul li{
     list-style-type: none;
     display: inline-block;
@@ -131,6 +135,15 @@ footer a{
     font-size: larger;
     margin-bottom: 1cm;
     }
+
+    /* ESTILOS CONTACTO */
+.ulhc{
+    text-decoration: none;
+    color: rgb(70, 9, 128);
+    font-size: 0.60cm;
+    margin: 1cm;
+}
+
 
   /* GRIDS INDEX */
     .cuerpo{

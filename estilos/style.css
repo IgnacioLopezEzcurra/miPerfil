@@ -1,0 +1,813 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2? family= Maven+Pro & display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ESTILOS INDEX */
+header {
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7990e), to(#fff));
+  background-image: linear-gradient(to bottom, #f7990e, #fff);
+}
+
+.navbar .container-fluid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: inherit;
+      flex-wrap: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-aroundc;
+      -ms-flex-pack: space-aroundc;
+          justify-content: space-aroundc;
+}
+
+ol, ul {
+  padding-left: 0rem;
+}
+
+body {
+  background-image: url("../img/playa.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.h1c {
+  margin: 40px 40px 40px 40px;
+}
+
+.primera {
+  text-align: center;
+}
+
+.parrafo {
+  font-family: sans-serif;
+  margin: 20px 0px 0px 0px;
+  padding: 15px 15px 15px 15px;
+  color: black;
+  font-size: x-large;
+  text-align: center;
+  background-color: rgba(209, 209, 209, 0.4);
+  border-radius: 1cm;
+}
+
+.bienvenida {
+  margin: 20px 0px 0px 0px;
+  padding: 15px 15px 15px 15px;
+  font-family: 'Maven Pro', sans-serif;
+  padding: 40px;
+}
+
+.perfil {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+  border-radius: 1cm;
+  margin: auto;
+  width: 200px;
+  height: 200px;
+}
+
+.videos {
+  font-family: 'Maven Pro', sans-serif;
+  padding: 40px;
+}
+
+.videos h2 {
+  padding: 15px 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: start;
+  background-color: rgba(214, 57, 57, 0.4);
+  border-radius: 1cm;
+}
+
+.video1 {
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+}
+
+.video2 {
+  padding: 15px 15px 15px 15px;
+  margin: 10px 10px 10px 10px;
+}
+
+.videos p {
+  padding: 15px 15px 15px 15px;
+  font-family: sans-serif;
+  color: black;
+  font-size: x-large;
+  background-color: rgba(209, 209, 209, 0.4);
+  border-radius: 1cm;
+}
+
+footer {
+  padding: 10px 10px 10px 10px;
+  margin-bottom: 0;
+  margin-top: 5px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f7990e), to(#fff));
+  background-image: linear-gradient(to top, #f7990e, #fff);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+footer h2 {
+  color: #460980;
+  margin-bottom: 5px;
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0.83em;
+          margin-block-end: 0.83em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+footer a {
+  color: #c21f1f;
+  font-size: larger;
+  margin-bottom: 1cm;
+}
+
+/* GRIDS INDEX */
+.cuerpo {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "headeri headeri headeri headeri" "bienvenida bienvenida bienvenida bienvenida" "videos videos videos videos" "footeri footeri footeri footeri";
+  gap: 20px;
+}
+
+.headeri {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: headeri;
+}
+
+.bienvenida {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: bienvenida;
+}
+
+.videos {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: videos;
+}
+
+.footeri {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: footeri;
+}
+
+.videos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "titulo titulo" "video1 pv1" "video2 pv2";
+}
+
+.titulo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulo;
+}
+
+.video1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: video1;
+}
+
+.video2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: video2;
+}
+
+.pv1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: pv1;
+}
+
+.pv2 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: pv2;
+}
+
+/* GALERIA DE MEMES */
+.meme1 {
+  width: 320px;
+  height: 220px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+.meme2 {
+  width: 320px;
+  height: 220px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+.meme3 {
+  width: 320px;
+  height: 220px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+.meme4 {
+  width: 320px;
+  height: 220px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+.meme5 {
+  width: 320px;
+  height: 220px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+.meme6 {
+  width: 320px;
+  height: 220px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+}
+
+/* IMAGENES DE SECCION DOBLAJE */
+.castañeda {
+  width: 520px;
+  height: 300px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: castañeda;
+}
+
+.humberto {
+  width: 520px;
+  height: 300px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: humberto;
+}
+
+.tatul {
+  width: 520px;
+  height: 300px;
+  padding-top: 15px;
+  display: block;
+  margin: auto;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: tatul;
+}
+
+.fmc {
+  text-align: center;
+}
+
+.fhv {
+  text-align: center;
+}
+
+.fhs {
+  text-align: center;
+}
+
+/*  GRIDS PAGINA DOBLAJES */
+.grilla {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "header header header" "doblajes doblajes doblajes" "footer footer footer";
+  gap: 0.2rem;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+}
+
+.doblajes {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: doblajes;
+}
+
+.footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+}
+
+.contenido {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "titulodbl titulodbl" "mario castañeda" "humberto homero" "hera tatul";
+  gap: 20px;
+  height: 1100px;
+}
+
+.titulodbl {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulodbl;
+  margin-top: 25px;
+}
+
+.mario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: initial;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: mario;
+}
+
+.homero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: initial;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: homero;
+}
+
+.hera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: initial;
+}
+
+.pmc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 15px 15px 15px;
+  font-family: sans-serif;
+  color: black;
+  font-size: x-large;
+  background-color: rgba(209, 209, 209, 0.4);
+  margin-left: 15px;
+  border-radius: 1cm;
+}
+
+.phv {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 15px 15px 15px;
+  font-family: sans-serif;
+  color: black;
+  font-size: x-large;
+  background-color: rgba(209, 209, 209, 0.4);
+  margin-right: 15px;
+  border-radius: 1cm;
+}
+
+.ptb {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px 15px 15px 15px;
+  font-family: sans-serif;
+  color: black;
+  font-size: x-large;
+  background-color: rgba(209, 209, 209, 0.4);
+  margin-left: 15px;
+  border-radius: 1cm;
+}
+
+/* GRIDS CONTACTO  */
+.contactf {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "headerc" "contactofor" "footerc";
+  gap: 20px;
+}
+
+.headerc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: headerc;
+}
+
+.contactofor {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: contactofor;
+}
+
+.footerc {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footerc;
+}
+
+.pregunta article form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+/* ESTILOS Y GRIDS MUSICA */
+.musicbody {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-area: 1fr 1fr 1fr;
+      grid-template-areas: "headermsc" "sectionmsc" "footermsc";
+}
+
+.sectionmsc {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sectionmsc;
+}
+
+.footermsc {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footermsc;
+}
+
+.musica {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: "titulomsc titulomsc" "p1msc p1msc" "videomsc1 p1vmsc" "videomsc2 p2vmsc";
+  gap: 20px;
+}
+
+.titulomsc {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulomsc;
+  margin-top: 25px;
+}
+
+.p1msc {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: p1msc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: initial;
+  font-family: sans-serif;
+  margin: 20px 0px 0px 0px;
+  padding: 15px 15px 15px 15px;
+  color: black;
+  font-size: x-large;
+  text-align: center;
+  background-color: rgba(209, 209, 209, 0.4);
+  border-radius: 1cm;
+}
+
+.videomsc1 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: videomsc1;
+}
+
+.p1vmsc p {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: p1vmsc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: initial;
+  padding: 15px 15px 15px 15px;
+  font-family: sans-serif;
+  color: black;
+  font-size: x-large;
+  background-color: rgba(209, 209, 209, 0.4);
+  border-radius: 1cm;
+}
+
+.videomsc2 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: videomsc2;
+}
+
+.p2vmsc p {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: p2vmsc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: initial;
+  padding: 15px 15px 15px 15px;
+  font-family: sans-serif;
+  color: black;
+  font-size: x-large;
+  background-color: rgba(209, 209, 209, 0.4);
+  border-radius: 1cm;
+}
+
+/* GRIDS MEMES */
+.galeria {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "headerm " "titulogm" "memes" "footerm";
+  gap: 20px;
+}
+
+.memes {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: "titulogm titulogm" "meme1 meme2" "meme3 meme4" "meme5 meme6";
+  height: 1100px;
+  gap: 0.2rem;
+}
+
+.headerm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: headerm;
+}
+
+.titulogm {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: titulogm;
+  margin-top: 25px;
+}
+
+.meme1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: meme1;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.meme2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: meme2;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.meme3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: meme3;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.meme4 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: meme4;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.meme5 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: meme5;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.meme6 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: meme6;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.footerm {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footerm;
+}
+
+.meme1:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.meme2:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.meme3:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.meme4:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.meme5:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.meme6:hover {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+/* MEDIA QUERIES */
+@media screen {
+  .cuerpo {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "headeri" "bienvenida" "videos" "footeri";
+  }
+}
+
+/* MEDIA QUERIE MUSICA */
+@media screen {
+  .musicbody {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-area: 1fr 1fr 1fr;
+        grid-template-areas: "headermsc" "sectionmsc" "footermsc";
+  }
+}
+
+/* MEDIA QUERIE DOBLAJE */
+@media screen {
+  .grilla {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "header" "doblajes" "footer";
+  }
+}
+
+/* MEDIA QUERIE MEMES */
+@media screen {
+  .galeria {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas: "headerm" "titulogm" "meme1 meme2" "meme3 meme4" "meme5 meme6" "footerm";
+  }
+}
+
+/* MEDIA QUERIE CONTACTO */
+@media screen {
+  .contactf {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "headerc" "contactofor" "footerc";
+  }
+}
+/*# sourceMappingURL=style.css.map */

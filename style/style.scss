@@ -6,19 +6,6 @@
 }
 
 /* ESTILOS INDEX */
-header{
-    top: 0;
-    left: 0;
-    right: 0;
-    background-image: linear-gradient(to bottom, rgb(247, 153, 14), #fff);
-}
-
-.navbar .container-fluid{
-    display: flex;
-    flex-wrap: inherit;
-    align-items: center;
-    justify-content: space-aroundc;
-}
 
 ol, ul{
     padding-left: 0rem;
@@ -30,6 +17,18 @@ body{
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
+    header{
+        top: 0;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to bottom, rgb(247, 153, 14), #fff);
+        .navbar .container-fluid{
+            display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-aroundc;
+        }
+    }
 }
 
 h1{
@@ -42,37 +41,41 @@ h1{
     margin: 40px 40px 40px 40px;
 }
 
-.primera{
-    text-align: center;
+figure{
+    .primera{
+        text-align: center;
+    }
+    .perfil{
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: block;
+        border-radius: 1cm;
+        margin: auto;
+        width: 200px;
+        height: 200px;
+    }    
 }
 
-.parrafo{
-    font-family: sans-serif;
-    margin: 20px 0px 0px 0px;
-    padding: 15px 15px 15px 15px;
-    color: black;
-    font-size: x-large;
-    text-align: center;
-    background-color: rgba(209, 209, 209, 0.4);
-    border-radius: 1cm;
-}
+
+
 
 .bienvenida{
     margin: 20px 0px 0px 0px;
     padding: 15px 15px 15px 15px;
     font-family: 'Maven Pro', sans-serif;
     padding: 40px;
+    .parrafo{
+        font-family: sans-serif;
+        margin: 20px 0px 0px 0px;
+        padding: 15px 15px 15px 15px;
+        color: black;
+        font-size: x-large;
+        text-align: center;
+        background-color: rgba(209, 209, 209, 0.4);
+        border-radius: 1cm;
+    }
 }
 
-.perfil{
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: block;
-    border-radius: 1cm;
-    margin: auto;
-    width: 200px;
-    height: 200px;
-}
 
 .videos{
     font-family: 'Maven Pro', sans-serif;

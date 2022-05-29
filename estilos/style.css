@@ -6,7 +6,19 @@
 }
 
 /* ESTILOS INDEX */
-header {
+ol, ul {
+  padding-left: 0rem;
+}
+
+body {
+  background-image: url("../img/playa.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+}
+
+body header {
   top: 0;
   left: 0;
   right: 0;
@@ -14,7 +26,7 @@ header {
   background-image: linear-gradient(to bottom, #f7990e, #fff);
 }
 
-.navbar .container-fluid {
+body header .navbar .container-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,18 +40,6 @@ header {
           justify-content: space-aroundc;
 }
 
-ol, ul {
-  padding-left: 0rem;
-}
-
-body {
-  background-image: url("../img/playa.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-}
-
 h1 {
   text-align: center;
   color: white;
@@ -50,19 +50,18 @@ h1 {
   margin: 40px 40px 40px 40px;
 }
 
-.primera {
+figure .primera {
   text-align: center;
 }
 
-.parrafo {
-  font-family: sans-serif;
-  margin: 20px 0px 0px 0px;
-  padding: 15px 15px 15px 15px;
-  color: black;
-  font-size: x-large;
-  text-align: center;
-  background-color: rgba(209, 209, 209, 0.4);
+figure .perfil {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
   border-radius: 1cm;
+  margin: auto;
+  width: 200px;
+  height: 200px;
 }
 
 .bienvenida {
@@ -72,14 +71,15 @@ h1 {
   padding: 40px;
 }
 
-.perfil {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: block;
+.bienvenida .parrafo {
+  font-family: sans-serif;
+  margin: 20px 0px 0px 0px;
+  padding: 15px 15px 15px 15px;
+  color: black;
+  font-size: x-large;
+  text-align: center;
+  background-color: rgba(209, 209, 209, 0.4);
   border-radius: 1cm;
-  margin: auto;
-  width: 200px;
-  height: 200px;
 }
 
 .videos {

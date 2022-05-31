@@ -517,28 +517,6 @@ figure .perfil {
 }
 
 /* ESTILOS Y GRIDS MUSICA */
-.musicbody {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "headermsc" "sectionmsc" "footermsc";
-}
-
-.sectionmsc {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: sectionmsc;
-}
-
-.footermsc {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: footermsc;
-}
-
 .musica {
   padding: 15px 15px 15px 15px;
   display: -ms-grid;

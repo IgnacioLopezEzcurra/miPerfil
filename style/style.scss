@@ -301,26 +301,7 @@
 
 /* ESTILOS Y GRIDS MUSICA */
 
-.musicbody{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "headermsc"
-    "sectionmsc"
-    "footermsc"
-    ;
-}
 
-.sectionmsc{
-    grid-area: sectionmsc;
-}
-
-.footermsc{
-    grid-area: footermsc;
-}
 
 .musica{
     padding: 15px 15px 15px 15px;

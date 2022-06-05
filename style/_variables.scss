@@ -2,3 +2,14 @@ $ctitle: white;
 $bckp: rgba(209, 209, 209, 0.4);
 $bordep: 1cm;
 $ctext: black;
+
+$redes:(
+    instagram: linear-gradient(to left, rgba(255, 255, 255, 0.89), rgba(248, 236, 69, 0.945),rgba(247, 14, 14, 0.904), rgba(183, 55, 223, 0.87)),
+    tiktok: linear-gradient(to left, rgba(255, 255, 255, 0.89),rgba(0, 0, 0, 0.726)),
+    youtube: linear-gradient(to left, rgba(255, 255, 255, 0.89),rgba(255, 30, 0, 0.877)),
+);
+@each $red, $color in $redes {
+    .li--#{$red}{
+        background-image: $color;
+    }
+}

@@ -70,7 +70,7 @@
 
     /* GALERIA DE MEMES */
 
-    .meme1{
+    .memesG{
         width: 320px;
         height: 220px;
         padding-top: 15px;
@@ -78,71 +78,33 @@
         margin: auto;
     }
 
-    .meme2{
-        width: 320px;
-        height: 220px;
-        padding-top: 15px;
-        display: block;
-        margin: auto;
+    .meme1, .meme2, .meme3, .meme4, .meme5, .meme6{
+       @extend.memesG;
     }
 
-    .meme3{
-        width: 320px;
-        height: 220px;
-        padding-top: 15px;
-        display: block;
-        margin: auto;
-    }
-
-    .meme4{
-        width: 320px;
-        height: 220px;
-        padding-top: 15px;
-        display: block;
-        margin: auto;
-    }
-
-    .meme5{
-        width: 320px;
-        height: 220px;
-        padding-top: 15px;
-        display: block;
-        margin: auto;
-    }
-
-    .meme6{
-        width: 320px;
-        height: 220px;
-        padding-top: 15px;
-        display: block;
-        margin: auto;
-    }
+    
 
      /* IMAGENES DE SECCION DOBLAJE */
-    .castañeda{
-        width: 520px;
+.fotosdbl{
+    width: 520px;
         height: 300px;
         padding-top: 15px;
         display: block;
         margin: auto;
+}
+
+    .castañeda{
+        @extend.fotosdbl;
         grid-area: castañeda;
     }
 
     .humberto{
-        width: 520px;
-        height: 300px;
-        padding-top: 15px;
-        display: block;
-        margin: auto;
+        @extend .castañeda;
         grid-area: humberto;
     }
 
     .tatul{
-        width: 520px;
-        height: 300px;
-        padding-top: 15px;
-        display: block;
-        margin: auto;
+        @extend .castañeda;
         grid-area: tatul;
     }
 
@@ -228,43 +190,43 @@
         text-align: initial;
     }
 
+    @mixin parraDobl ($style, $size, $border) {
+        font-style: $style;
+        font-size: $size;
+        border-radius: $border;
+    }
+
     .pmc{
+        @include parraDobl(sans-serif, x-large, 1cm);
         justify-content: center;
         align-items: center;
         padding: 15px 15px 15px 15px;
-        font-family: sans-serif;
         color: $ctext;
-        font-size: x-large;
         background-color: $bckp;
         margin-left: 15px;
         margin-right: 15px;
-        border-radius: 1cm;
     }
 
     .phv{
+        @include parraDobl(sans-serif, x-large, 1cm);
         justify-content: center;
         align-items: center;
         padding: 15px 15px 15px 15px;
-        font-family: sans-serif;
         color: $ctext;
-        font-size: x-large;
         background-color: $bckp;
         margin-left: 15px;
         margin-right: 15px;
-        border-radius: 1cm;
     }
 
     .ptb{
+        @include parraDobl(sans-serif, x-large, 1cm);
         justify-content: center;
         align-items: center;
         padding: 15px 15px 15px 15px;
-        font-family: sans-serif;
         color: $ctext;
-        font-size: x-large;
         background-color: $bckp;
         margin-left: 15px;
         margin-right: 15px;
-        border-radius: 1cm;
     }
 
 /* GRIDS CONTACTO  */
@@ -300,8 +262,6 @@
 
 
 /* ESTILOS Y GRIDS MUSICA */
-
-
 
 .musica{
     padding: 15px 15px 15px 15px;

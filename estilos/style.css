@@ -1,5 +1,20 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Maven+Pro & display=swap");
+.li--instagram {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.89)), color-stop(rgba(248, 236, 69, 0.945)), color-stop(rgba(247, 14, 14, 0.904)), to(rgba(183, 55, 223, 0.87)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.89), rgba(248, 236, 69, 0.945), rgba(247, 14, 14, 0.904), rgba(183, 55, 223, 0.87));
+}
+
+.li--tiktok {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.89)), to(rgba(0, 0, 0, 0.726)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.89), rgba(0, 0, 0, 0.726));
+}
+
+.li--youtube {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.89)), to(rgba(255, 30, 0, 0.877)));
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.89), rgba(255, 30, 0, 0.877));
+}
+
 body {
   background-image: url("../img/playa.jpg");
   background-repeat: no-repeat;
@@ -12,8 +27,8 @@ body header {
   top: 0;
   left: 0;
   right: 0;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7990e), to(#fff));
-  background-image: linear-gradient(to bottom, #f7990e, #fff);
+  background-image: -webkit-gradient(linear, left top, right top, from(#f7990e), to(#fff));
+  background-image: linear-gradient(to right, #f7990e, #fff);
 }
 
 body header .navbar .container-fluid {
@@ -46,17 +61,19 @@ h1 {
 }
 
 footer {
-  padding: 10px 10px 10px 10px;
+  padding: 10px 0px 10px 0px;
   margin-bottom: 0;
   margin-top: 15px;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#f7990e), to(#fff));
-  background-image: linear-gradient(to top, #f7990e, #fff);
+  background-image: -webkit-gradient(linear, left top, right top, from(#f7990e), to(#fff));
+  background-image: linear-gradient(to right, #f7990e, #fff);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 footer h2 {
   color: #460980;
+  padding-left: 10px;
   margin-bottom: 5px;
+  margin-left: 10px;
   display: block;
   font-size: 1.5em;
   -webkit-margin-before: 0em;
@@ -70,10 +87,20 @@ footer h2 {
   font-weight: bold;
 }
 
+footer li {
+  text-align: justify;
+  padding-left: 10px;
+  margin-top: 10px;
+  height: 40px;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
+}
+
 footer a {
-  color: #c21f1f;
-  font-size: larger;
+  color: white;
+  font-size: x-large;
   margin-bottom: 1cm;
+  margin: 10px 0px 0px 0px;
 }
 
 figure .primera {
@@ -121,6 +148,7 @@ figure .perfil {
   text-align: start;
   background-color: rgba(214, 57, 57, 0.4);
   border-radius: 1cm;
+  text-transform: uppercase;
 }
 
 .videos .video1 {
@@ -231,47 +259,7 @@ figure .perfil {
 }
 
 /* GALERIA DE MEMES */
-.meme1 {
-  width: 320px;
-  height: 220px;
-  padding-top: 15px;
-  display: block;
-  margin: auto;
-}
-
-.meme2 {
-  width: 320px;
-  height: 220px;
-  padding-top: 15px;
-  display: block;
-  margin: auto;
-}
-
-.meme3 {
-  width: 320px;
-  height: 220px;
-  padding-top: 15px;
-  display: block;
-  margin: auto;
-}
-
-.meme4 {
-  width: 320px;
-  height: 220px;
-  padding-top: 15px;
-  display: block;
-  margin: auto;
-}
-
-.meme5 {
-  width: 320px;
-  height: 220px;
-  padding-top: 15px;
-  display: block;
-  margin: auto;
-}
-
-.meme6 {
+.memesG, .meme1, .meme2, .meme3, .meme4, .meme5, .meme6 {
   width: 320px;
   height: 220px;
   padding-top: 15px;
@@ -280,34 +268,27 @@ figure .perfil {
 }
 
 /* IMAGENES DE SECCION DOBLAJE */
-.castañeda {
+.fotosdbl, .castañeda, .humberto, .tatul {
   width: 520px;
   height: 300px;
   padding-top: 15px;
   display: block;
   margin: auto;
+}
+
+.castañeda, .humberto, .tatul {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: castañeda;
 }
 
 .humberto {
-  width: 520px;
-  height: 300px;
-  padding-top: 15px;
-  display: block;
-  margin: auto;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: humberto;
 }
 
 .tatul {
-  width: 520px;
-  height: 300px;
-  padding-top: 15px;
-  display: block;
-  margin: auto;
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: tatul;
@@ -431,6 +412,9 @@ figure .perfil {
 }
 
 .pmc {
+  font-style: sans-serif;
+  font-size: x-large;
+  border-radius: 1cm;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -438,16 +422,16 @@ figure .perfil {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 15px 15px 15px;
-  font-family: sans-serif;
   color: black;
-  font-size: x-large;
   background-color: rgba(209, 209, 209, 0.4);
   margin-left: 15px;
   margin-right: 15px;
-  border-radius: 1cm;
 }
 
 .phv {
+  font-style: sans-serif;
+  font-size: x-large;
+  border-radius: 1cm;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -455,16 +439,16 @@ figure .perfil {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 15px 15px 15px;
-  font-family: sans-serif;
   color: black;
-  font-size: x-large;
   background-color: rgba(209, 209, 209, 0.4);
   margin-left: 15px;
   margin-right: 15px;
-  border-radius: 1cm;
 }
 
 .ptb {
+  font-style: sans-serif;
+  font-size: x-large;
+  border-radius: 1cm;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -472,13 +456,10 @@ figure .perfil {
       -ms-flex-align: center;
           align-items: center;
   padding: 15px 15px 15px 15px;
-  font-family: sans-serif;
   color: black;
-  font-size: x-large;
   background-color: rgba(209, 209, 209, 0.4);
   margin-left: 15px;
   margin-right: 15px;
-  border-radius: 1cm;
 }
 
 /* GRIDS CONTACTO  */

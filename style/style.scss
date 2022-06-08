@@ -260,6 +260,30 @@
 }
 
 
+.forcontact{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nombrec"
+    "emailc"
+    "mensajec"
+    ;
+}
+
+.nombrec{
+    grid-area: nombrec;
+}
+
+.mensajec{
+    grid-area: mensajec;
+}
+
+.emailc{
+    grid-area: emailc;
+}
+
 
 /* ESTILOS Y GRIDS MUSICA */
 
@@ -482,6 +506,7 @@
          }
     }
 
+
     /* MEDIA QUERIE MEMES */
     @media screen {
         .galeria{
@@ -511,3 +536,4 @@
         ;
     }
 }
+

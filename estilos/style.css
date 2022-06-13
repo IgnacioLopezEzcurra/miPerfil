@@ -179,7 +179,10 @@ figure .perfil {
       grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "headeri headeri headeri headeri" "bienvenida bienvenida bienvenida bienvenida" "videos videos videos videos" "footeri footeri footeri footeri";
+      grid-template-areas: "headeri headeri headeri headeri"
+ "bienvenida bienvenida bienvenida bienvenida"
+ "videos videos videos videos"
+ "footeri footeri footeri footeri";
   gap: 20px;
 }
 
@@ -224,7 +227,9 @@ figure .perfil {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-      grid-template-areas: "titulo titulo" "video1 pv1" "video2 pv2";
+      grid-template-areas: "titulo titulo"
+ "video1 pv1"
+ "video2 pv2";
 }
 
 .titulo {
@@ -315,7 +320,9 @@ figure .perfil {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "header header header" "doblajes doblajes doblajes" "footer footer footer";
+      grid-template-areas: "header header header"
+ "doblajes doblajes doblajes"
+ "footer footer footer";
   gap: 0.2rem;
 }
 
@@ -353,7 +360,10 @@ figure .perfil {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "titulodbl titulodbl" "mario castañeda" "humberto homero" "hera tatul";
+      grid-template-areas: "titulodbl titulodbl"
+ "mario castañeda"
+ "humberto homero"
+ "hera tatul";
   gap: 20px;
   height: 1200px;
 }
@@ -471,7 +481,9 @@ figure .perfil {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "headerc" "contactofor" "footerc";
+      grid-template-areas: "headerc"
+ "contactofor"
+ "footerc";
   gap: 20px;
 }
 
@@ -497,6 +509,37 @@ figure .perfil {
   grid-area: footerc;
 }
 
+.forcontact {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "nombrec"
+ "emailc"
+ "mensajec";
+}
+
+.nombrec {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: nombrec;
+}
+
+.mensajec {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: mensajec;
+}
+
+.emailc {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: emailc;
+}
+
 /* ESTILOS Y GRIDS MUSICA */
 .musica {
   padding: 15px 15px 15px 15px;
@@ -512,7 +555,10 @@ figure .perfil {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-      grid-template-areas: "titulomsc titulomsc" "p1msc p1msc" "videomsc1 p1vmsc" "videomsc2 p2vmsc";
+      grid-template-areas: "titulomsc titulomsc"
+ "p1msc p1msc"
+ "videomsc1 p1vmsc"
+ "videomsc2 p2vmsc";
   gap: 20px;
 }
 
@@ -618,7 +664,10 @@ figure .perfil {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "headerm " "titulogm" "memes" "footerm";
+      grid-template-areas: "headerm "
+ "titulogm"
+ "memes"
+ "footerm";
   gap: 20px;
 }
 
@@ -629,7 +678,10 @@ figure .perfil {
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-      grid-template-areas: "titulogm titulogm" "meme1 meme2" "meme3 meme4" "meme5 meme6";
+      grid-template-areas: "titulogm titulogm"
+ "meme1 meme2"
+ "meme3 meme4"
+ "meme5 meme6";
   height: 1100px;
   gap: 0.2rem;
 }
@@ -731,60 +783,109 @@ figure .perfil {
   -webkit-transform: scale(2);
           transform: scale(2);
 }
+/*# sourceMappingURL=style.css.map */
 
-/* MEDIA QUERIES */
-@media screen {
-  .cuerpo {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-areas: "headeri" "bienvenida" "videos" "footeri";
-  }
+  /* MEDIA QUERIES */
+
+  @media screen {
+    .cuerpo{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       grid-template-areas: 
+       "headeri"
+       "bienvenida"
+       "videos"
+       "footeri"
+       ;
+    }
+    
 }
 
+@media (max-width:500px) {
+  .videos{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "titulo"
+    "video1"
+    "pv1"
+    "video2" 
+    "pv2"
+    ;
+}
+.cuerpo{
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "headeri"
+  "bienvenida"
+  "videos"
+  "footeri"
+  ;
+  gap: 20px;
+}
+}
+
+
 /* MEDIA QUERIE MUSICA */
+
 @media screen {
-  .musicbody {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-area: 1fr 1fr 1fr;
-        grid-template-areas: "headermsc" "sectionmsc" "footermsc";
-  }
+   .musicbody{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-area: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "headermsc"
+       "sectionmsc"
+       "footermsc"
+       ;
+   }
 }
 
 /* MEDIA QUERIE DOBLAJE */
 @media screen {
-  .grilla {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "header" "doblajes" "footer";
-  }
+   .grilla{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "header"
+       "doblajes"
+       "footer"
+       ;
+    }
 }
+
 
 /* MEDIA QUERIE MEMES */
 @media screen {
-  .galeria {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto auto auto auto auto;
-        grid-template-rows: auto auto auto auto auto;
-        grid-template-areas: "headerm" "titulogm" "meme1 meme2" "meme3 meme4" "meme5 meme6" "footerm";
-  }
+   .galeria{
+       grid-template-columns: auto;
+       grid-template-rows: auto auto auto auto auto;
+       grid-template-areas: 
+       "headerm"
+       "titulogm"
+       "meme1 meme2"
+       "meme3 meme4"
+       "meme5 meme6"
+       "footerm"
+       ;
+   }
+}
+   
+/* MEDIA QUERIE CONTACTO */
+
+@media screen {
+.contactf{
+   grid-template-columns: auto;
+   grid-template-rows: auto auto auto;
+   grid-template-areas: 
+   "headerc"
+   "contactofor"
+   "footerc"
+   ;
+}
 }
 
-/* MEDIA QUERIE CONTACTO */
-@media screen {
-  .contactf {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "headerc" "contactofor" "footerc";
-  }
-}
-/*# sourceMappingURL=style.css.map */

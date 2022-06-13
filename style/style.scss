@@ -8,13 +8,13 @@
     .cuerpo{
         display: grid;
         height: 100vh;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "headeri headeri headeri headeri"
-        "bienvenida bienvenida bienvenida bienvenida"
-        "videos videos videos videos"
-        "footeri footeri footeri footeri"
+        "headeri"
+        "bienvenida"
+        "videos"
+        "footeri"
         ;
         gap: 20px;
     }
@@ -461,79 +461,4 @@
 }
     
 
-     /* MEDIA QUERIES */
-
-     @media screen {
-         .cuerpo{
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr 1fr;
-            grid-template-areas: 
-            "headeri"
-            "bienvenida"
-            "videos"
-            "footeri"
-            ;
-         }
-         
-     }
-
-
-     /* MEDIA QUERIE MUSICA */
-
-     @media screen {
-        .musicbody{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-area: 1fr 1fr 1fr;
-            grid-template-areas: 
-            "headermsc"
-            "sectionmsc"
-            "footermsc"
-            ;
-        }
-     }
-
-    /* MEDIA QUERIE DOBLAJE */
-    @media screen {
-        .grilla{
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: 
-            "header"
-            "doblajes"
-            "footer"
-            ;
-         }
-    }
-
-
-    /* MEDIA QUERIE MEMES */
-    @media screen {
-        .galeria{
-            grid-template-columns: auto;
-            grid-template-rows: auto auto auto auto auto;
-            grid-template-areas: 
-            "headerm"
-            "titulogm"
-            "meme1 meme2"
-            "meme3 meme4"
-            "meme5 meme6"
-            "footerm"
-            ;
-        }
-    }
-        
-/* MEDIA QUERIE CONTACTO */
-
-@media screen {
-    .contactf{
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: 
-        "headerc"
-        "contactofor"
-        "footerc"
-        ;
-    }
-}
-
+   

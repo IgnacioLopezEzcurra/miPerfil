@@ -1,0 +1,246 @@
+/* MEDIA QUERIES */
+
+@media screen {
+    .cuerpo{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr 1fr;
+       grid-template-areas: 
+       "headeri"
+       "bienvenida"
+       "videos"
+       "footeri"
+       ;
+    }
+    
+}
+
+@media (max-width:500px) {
+  .videos{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "titulo"
+    "video1"
+    "pv1"
+    "video2" 
+    "pv2"
+    ;
+}
+.cuerpo{
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "headeri"
+  "bienvenida"
+  "videos"
+  "footeri"
+  ;
+  gap: 20px;
+}
+body{
+  background-color: #526392;
+  background-image: none;
+}
+}
+
+@media (max-width:996px) {
+  .videos{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: 
+    "titulo"
+    "video1"
+    "pv1"
+    "video2" 
+    "pv2"
+    ;
+}
+.cuerpo{
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "headeri"
+  "bienvenida"
+  "videos"
+  "footeri"
+  ;
+  gap: 20px;
+}
+}
+
+
+/* MEDIA QUERIE MUSICA */
+
+@media screen {
+   .musicbody{
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-area: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "headermsc"
+       "sectionmsc"
+       "footermsc"
+       ;
+   }
+}
+
+@media (max-width:500px){
+  .musica{
+    padding: 15px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "titulomsc"
+    "p1msc"
+    "videomsc1" 
+    "p1vmsc"
+    "videomsc2" 
+    "p2vmsc"
+    ;
+    gap: 20px;
+}
+}
+
+@media (max-width:996px){
+  .musica{
+    padding: 15px 15px 15px 15px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "titulomsc"
+    "p1msc"
+    "videomsc1" 
+    "p1vmsc"
+    "videomsc2" 
+    "p2vmsc"
+    ;
+    gap: 20px;
+}
+}
+  
+
+/* MEDIA QUERIE DOBLAJE */
+@media screen {
+   .grilla{
+       grid-template-columns: 1fr;
+       grid-template-rows: 1fr 1fr 1fr;
+       grid-template-areas: 
+       "header"
+       "doblajes"
+       "footer"
+       ;
+    }
+}
+
+@media (max-width:500px){
+  .contenido{
+    height: 400vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulodbl"
+    "castañeda"
+    "mario"
+    "humberto" 
+    "homero"
+    "tatul"
+    "hera" 
+    ;
+    gap: 20px;
+}
+}
+
+@media (max-width:996px){
+  .contenido{
+    height: 400vh;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "titulodbl"
+    "castañeda"
+    "mario"
+    "humberto" 
+    "homero"
+    "tatul"
+    "hera" 
+    ;
+    gap: 20px;
+}
+}
+
+
+/* MEDIA QUERIE MEMES */
+@media screen {
+   .galeria{
+       grid-template-columns: auto;
+       grid-template-rows: auto auto auto;
+       grid-template-areas: 
+       "headerm"
+       "memes"
+       "footerm"
+       ;
+   }
+}
+   
+@media (max-width:500px){
+  .memes{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "titulogm"
+    "meme1" 
+    "meme2"
+    "meme3" 
+    "meme4"
+    "meme5" 
+    "meme6"
+    ;
+    height: 300vh;
+    gap: 0.2rem;
+}
+}
+
+@media (max-width:996px){
+  .memes{
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas: 
+    "titulogm"
+    "meme1" 
+    "meme2"
+    "meme3" 
+    "meme4"
+    "meme5" 
+    "meme6"
+    ;
+    height: 300vh;
+    gap: 0.2rem;
+}
+}
+/* MEDIA QUERIE CONTACTO */
+
+@media screen {
+.contactf{
+   grid-template-columns: auto;
+   grid-template-rows: auto auto auto;
+   grid-template-areas: 
+   "headerc"
+   "contactofor"
+   "footerc"
+   ;
+}
+}

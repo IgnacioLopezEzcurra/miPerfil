@@ -1,4 +1,4 @@
-/* MEDIA QUERIES */
+
 
 @media screen {
     .cuerpo{
@@ -75,8 +75,6 @@ body{
 }
 
 
-/* MEDIA QUERIE MUSICA */
-
 @media screen {
    .musicbody{
        display: grid;
@@ -128,8 +126,6 @@ body{
 }
 }
   
-
-/* MEDIA QUERIE DOBLAJE */
 @media screen {
    .grilla{
        grid-template-columns: 1fr;
@@ -182,8 +178,6 @@ body{
 }
 }
 
-
-/* MEDIA QUERIE MEMES */
 @media screen {
    .galeria{
        grid-template-columns: auto;
@@ -231,7 +225,7 @@ body{
     gap: 0.2rem;
 }
 }
-/* MEDIA QUERIE CONTACTO */
+
 
 @media screen {
 .contactf{
@@ -243,4 +237,17 @@ body{
    "footerc"
    ;
 }
+}
+
+@media (max-width:500px){
+  .forcontact{
+    background-color:unset;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nombrec"
+    "emailc"
+    "mensajec"
+    ;
+   }
 }

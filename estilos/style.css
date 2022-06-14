@@ -1,20 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2? family= Maven+Pro & display=swap");
-.li--instagram {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.89)), color-stop(rgba(248, 236, 69, 0.945)), color-stop(rgba(247, 14, 14, 0.904)), to(rgba(183, 55, 223, 0.87)));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.89), rgba(248, 236, 69, 0.945), rgba(247, 14, 14, 0.904), rgba(183, 55, 223, 0.87));
-}
-
-.li--tiktok {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.89)), to(rgba(0, 0, 0, 0.726)));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.89), rgba(0, 0, 0, 0.726));
-}
-
-.li--youtube {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 0.89)), to(rgba(255, 30, 0, 0.877)));
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.89), rgba(255, 30, 0, 0.877));
-}
-
 body {
   background-image: url("../img/playa.jpg");
   background-repeat: no-repeat;
@@ -58,6 +43,7 @@ h1 {
   text-align: center;
   color: white;
   font-family: 'Maven Pro', sans-serif;
+  font-weight: bold;
 }
 
 footer {
@@ -69,26 +55,19 @@ footer {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-footer h2 {
-  color: #460980;
-  padding-left: 10px;
-  margin-bottom: 5px;
-  margin-left: 10px;
-  display: block;
-  font-size: 1.5em;
-  -webkit-margin-before: 0em;
-          margin-block-start: 0em;
-  -webkit-margin-after: 0.83em;
-          margin-block-end: 0.83em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
-  font-weight: bold;
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style-type: none;
+  padding: 20px 80px 20px 80px;
 }
 
 footer li {
-  text-align: justify;
+  text-align: center;
   padding-left: 10px;
   margin-top: 10px;
   height: 40px;
@@ -97,10 +76,10 @@ footer li {
 }
 
 footer a {
-  color: white;
-  font-size: x-large;
+  color: #526392;
+  font-size: 3em;
   margin-bottom: 1cm;
-  margin: 10px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 
 figure .primera {
@@ -170,47 +149,39 @@ figure .perfil {
   border-radius: 1cm;
 }
 
-/* GRIDS INDEX */
 .cuerpo {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "headeri headeri headeri headeri"
- "bienvenida bienvenida bienvenida bienvenida"
- "videos videos videos videos"
- "footeri footeri footeri footeri";
+      grid-template-areas: "headeri" "bienvenida" "videos" "footeri";
   gap: 20px;
 }
 
 .headeri {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: headeri;
 }
 
 .bienvenida {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: bienvenida;
 }
 
 .videos {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: videos;
 }
 
 .footeri {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-area: footeri;
 }
 
@@ -227,9 +198,7 @@ figure .perfil {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-      grid-template-areas: "titulo titulo"
- "video1 pv1"
- "video2 pv2";
+      grid-template-areas: "titulo titulo" "video1 pv1" "video2 pv2";
 }
 
 .titulo {
@@ -263,7 +232,6 @@ figure .perfil {
   grid-area: pv2;
 }
 
-/* GALERIA DE MEMES */
 .memesG, .meme1, .meme2, .meme3, .meme4, .meme5, .meme6 {
   width: 320px;
   height: 220px;
@@ -272,7 +240,6 @@ figure .perfil {
   margin: auto;
 }
 
-/* IMAGENES DE SECCION DOBLAJE */
 .fotosdbl, .castañeda, .humberto, .tatul {
   width: 520px;
   height: 300px;
@@ -311,7 +278,6 @@ figure .perfil {
   text-align: center;
 }
 
-/*  GRIDS PAGINA DOBLAJES */
 .grilla {
   display: -ms-grid;
   display: grid;
@@ -320,9 +286,7 @@ figure .perfil {
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "header header header"
- "doblajes doblajes doblajes"
- "footer footer footer";
+      grid-template-areas: "header header header" "doblajes doblajes doblajes" "footer footer footer";
   gap: 0.2rem;
 }
 
@@ -360,10 +324,7 @@ figure .perfil {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "titulodbl titulodbl"
- "mario castañeda"
- "humberto homero"
- "hera tatul";
+      grid-template-areas: "titulodbl titulodbl" "mario castañeda" "humberto homero" "hera tatul";
   gap: 20px;
   height: 1200px;
 }
@@ -472,7 +433,6 @@ figure .perfil {
   margin-right: 15px;
 }
 
-/* GRIDS CONTACTO  */
 .contactf {
   display: -ms-grid;
   display: grid;
@@ -481,9 +441,7 @@ figure .perfil {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "headerc"
- "contactofor"
- "footerc";
+      grid-template-areas: "headerc" "contactofor" "footerc";
   gap: 20px;
 }
 
@@ -510,37 +468,89 @@ figure .perfil {
 }
 
 .forcontact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(240, 248, 255, 0.301);
   display: -ms-grid;
   display: grid;
-  height: 100vh;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: "nombrec"
- "emailc"
- "mensajec";
+      grid-template-areas: "nombrec" "emailc" "mensajec";
 }
 
 .nombrec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: nombrec;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .mensajec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 60px;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: mensajec;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mensajec input {
+  background-color: #f7990e;
 }
 
 .emailc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-bottom: 70px;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: emailc;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* ESTILOS Y GRIDS MUSICA */
 .musica {
   padding: 15px 15px 15px 15px;
   display: -ms-grid;
@@ -555,10 +565,7 @@ figure .perfil {
       grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-      grid-template-areas: "titulomsc titulomsc"
- "p1msc p1msc"
- "videomsc1 p1vmsc"
- "videomsc2 p2vmsc";
+      grid-template-areas: "titulomsc titulomsc" "p1msc p1msc" "videomsc1 p1vmsc" "videomsc2 p2vmsc";
   gap: 20px;
 }
 
@@ -655,7 +662,6 @@ figure .perfil {
   border-radius: 1cm;
 }
 
-/* GRIDS MEMES */
 .galeria {
   display: -ms-grid;
   display: grid;
@@ -664,10 +670,7 @@ figure .perfil {
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr;
-      grid-template-areas: "headerm "
- "titulogm"
- "memes"
- "footerm";
+      grid-template-areas: "headerm " "titulogm" "memes" "footerm";
   gap: 20px;
 }
 
@@ -678,10 +681,7 @@ figure .perfil {
       grid-template-columns: auto auto;
   -ms-grid-rows: auto auto auto auto;
       grid-template-rows: auto auto auto auto;
-      grid-template-areas: "titulogm titulogm"
- "meme1 meme2"
- "meme3 meme4"
- "meme5 meme6";
+      grid-template-areas: "titulogm titulogm" "meme1 meme2" "meme3 meme4" "meme5 meme6";
   height: 1100px;
   gap: 0.2rem;
 }
@@ -784,251 +784,3 @@ figure .perfil {
           transform: scale(2);
 }
 /*# sourceMappingURL=style.css.map */
-
-  /* MEDIA QUERIES */
-
-  @media screen {
-    .cuerpo{
-       grid-template-columns: 1fr;
-       grid-template-rows: 1fr 1fr 1fr 1fr;
-       grid-template-areas: 
-       "headeri"
-       "bienvenida"
-       "videos"
-       "footeri"
-       ;
-    }
-    
-}
-
-@media (max-width:500px) {
-  .videos{
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas: 
-    "titulo"
-    "video1"
-    "pv1"
-    "video2" 
-    "pv2"
-    ;
-}
-.cuerpo{
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "headeri"
-  "bienvenida"
-  "videos"
-  "footeri"
-  ;
-  gap: 20px;
-}
-body{
-  background-color: #526392;
-  background-image: none;
-}
-}
-
-@media (max-width:996px) {
-  .videos{
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto;
-    justify-content: center;
-    align-items: center;
-    grid-template-areas: 
-    "titulo"
-    "video1"
-    "pv1"
-    "video2" 
-    "pv2"
-    ;
-}
-.cuerpo{
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-areas: 
-  "headeri"
-  "bienvenida"
-  "videos"
-  "footeri"
-  ;
-  gap: 20px;
-}
-}
-
-
-/* MEDIA QUERIE MUSICA */
-
-@media screen {
-   .musicbody{
-       display: grid;
-       grid-template-columns: 1fr;
-       grid-area: 1fr 1fr 1fr;
-       grid-template-areas: 
-       "headermsc"
-       "sectionmsc"
-       "footermsc"
-       ;
-   }
-}
-
-@media (max-width:500px){
-  .musica{
-    padding: 15px 15px 15px 15px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 
-    "titulomsc"
-    "p1msc"
-    "videomsc1" 
-    "p1vmsc"
-    "videomsc2" 
-    "p2vmsc"
-    ;
-    gap: 20px;
-}
-}
-
-@media (max-width:996px){
-  .musica{
-    padding: 15px 15px 15px 15px;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 
-    "titulomsc"
-    "p1msc"
-    "videomsc1" 
-    "p1vmsc"
-    "videomsc2" 
-    "p2vmsc"
-    ;
-    gap: 20px;
-}
-}
-  
-
-/* MEDIA QUERIE DOBLAJE */
-@media screen {
-   .grilla{
-       grid-template-columns: 1fr;
-       grid-template-rows: 1fr 1fr 1fr;
-       grid-template-areas: 
-       "header"
-       "doblajes"
-       "footer"
-       ;
-    }
-}
-
-@media (max-width:500px){
-  .contenido{
-    height: 400vh;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "titulodbl"
-    "castañeda"
-    "mario"
-    "humberto" 
-    "homero"
-    "tatul"
-    "hera" 
-    ;
-    gap: 20px;
-}
-}
-
-@media (max-width:996px){
-  .contenido{
-    height: 400vh;
-    justify-content: center;
-    align-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "titulodbl"
-    "castañeda"
-    "mario"
-    "humberto" 
-    "homero"
-    "tatul"
-    "hera" 
-    ;
-    gap: 20px;
-}
-}
-
-
-/* MEDIA QUERIE MEMES */
-@media screen {
-   .galeria{
-       grid-template-columns: auto;
-       grid-template-rows: auto auto auto;
-       grid-template-areas: 
-       "headerm"
-       "memes"
-       "footerm"
-       ;
-   }
-}
-   
-@media (max-width:500px){
-  .memes{
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-areas: 
-    "titulogm"
-    "meme1" 
-    "meme2"
-    "meme3" 
-    "meme4"
-    "meme5" 
-    "meme6"
-    ;
-    height: 300vh;
-    gap: 0.2rem;
-}
-}
-
-@media (max-width:996px){
-  .memes{
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-areas: 
-    "titulogm"
-    "meme1" 
-    "meme2"
-    "meme3" 
-    "meme4"
-    "meme5" 
-    "meme6"
-    ;
-    height: 300vh;
-    gap: 0.2rem;
-}
-}
-/* MEDIA QUERIE CONTACTO */
-
-@media screen {
-.contactf{
-   grid-template-columns: auto;
-   grid-template-rows: auto auto auto;
-   grid-template-areas: 
-   "headerc"
-   "contactofor"
-   "footerc"
-   ;
-}
-}
-
